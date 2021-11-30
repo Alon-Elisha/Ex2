@@ -1,4 +1,4 @@
-#define n 4
+#define n 10
 
 void getmatrix(int matrix1[n][n]);
 

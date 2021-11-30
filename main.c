@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "my_mat.h"
 
-#define n 4
+#define n 10
 
 int
 main (void)
