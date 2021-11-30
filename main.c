@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include "my_mat.h"
 
-#define n 3
+#define n 4
 
 int
 main (void)
@@ -19,8 +19,12 @@ main (void)
         }
       }
   }
+
+  printf("The shortest path is %d :\n", shortestpath(mat, 1, 2));
+  /*
   printf("\n");
   pathwayexist(mat,1,2);
   printf("\n");
+  */
   
 }
