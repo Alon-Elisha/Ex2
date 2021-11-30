@@ -20,14 +20,14 @@ void getmatrix(int matrix1[n][n])
 
 void pathwayexist(int matrix[n][n], int i, int j)
 {
-  bool flag = true;
-  if(matrix[i][j] == 0){
-      printf("False");
+  int s = shortestpath(matrix, i, j);
+  if(s > -1)
+  {
+    printf("True\n");
   }
   else{
-      printf("True");
+    printf("False\n");
   }
-
 
 }
 
@@ -58,7 +58,7 @@ int shortestpath(int matrix1[n][n], int x, int y)
     {
       if(matrix1[i][j] > max)
       {
-        max = mat[i][j];
+        max = matrix1[i][j];
       }
     }
   }
@@ -68,7 +68,7 @@ int shortestpath(int matrix1[n][n], int x, int y)
   {
     for(j = 0; j < n; j++)
     {
-      if(mat[i][j] == 0 )
+      if(matrix1[i][j] == 0 )
       {
         // giving a value equivelent to infinity in this scenario.
         // there is no number greater than max, and we arent dealing with extremely large numbers, so max * 3 can be used as 'infinity'.
