@@ -40,14 +40,7 @@ main (void)
        if(command_letter == 'C'){
           printf("Enter i and j\n");
           scanf("%d" "%d", &i, &j);
-          int val = shortestpath(matrix, i, j);
-          if(val != -1)
-          {
-            printf("%d\n", val);
-          }
-          else{
-            printf("-1\n");
-          }
+          shortestpath(matrix, i, j);
        }
        if(command_letter == 'D'){
           exit(0);

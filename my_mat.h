@@ -2,9 +2,11 @@
 
 void getmatrix(int matrix1[n][n]);
 
-void pathwayexist(int matrix[n][n], int i, int j);
-
 int min(int x, int y);
 
-int shortestpath(int matrix1[n][n], int i, int j);
+int find_if_path(int matrix1[n][n], int x, int y);
+
+void pathwayexist(int matrix[n][n], int i, int j);
+
+void shortestpath(int matrix1[n][n], int i, int j);
 
