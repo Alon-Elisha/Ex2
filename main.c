@@ -22,7 +22,7 @@ main (void)
       }
   }
   */
-   FILE *out_file = fopen("test_files.txt", "w");
+   //FILE *out_file = fopen("test_files.txt", "w");
 
    int matrix[n][n];
    bool flag = true;
@@ -49,13 +49,13 @@ main (void)
        if(command_letter == 'B'){
           printf("Enter i and j\n");
           scanf("%d" "%d", &i, &j);
-          pathwayexist(matrix,i,j, out_file);
+          pathwayexist(matrix,i,j);
        }
        if(command_letter == 'C'){
           printf("Enter i and j\n");
           scanf("%d" "%d", &i, &j);
           int val = shortestpath(matrix, i, j);
-          fprintf(out_file,"%d\n", val);
+          printf("%d\n", val);
        }
        if(command_letter == 'D'){
           exit(0);

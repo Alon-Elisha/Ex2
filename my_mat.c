@@ -19,15 +19,15 @@ void getmatrix(int matrix1[n][n])
 
 
 
-void pathwayexist(int matrix[n][n], int i, int j, FILE out_file)
+void pathwayexist(int matrix[n][n], int i, int j)
 {
   int s = shortestpath(matrix, i, j);
   if(s > -1)
   {
-    fprintf(out_file, "True\n");
+    printf("True\n");
   }
   else{
-    fprintf(out_file, "False\n");
+    printf("False\n");
   }
 
 }

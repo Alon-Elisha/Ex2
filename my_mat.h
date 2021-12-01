@@ -2,7 +2,7 @@
 
 void getmatrix(int matrix1[n][n]);
 
-void pathwayexist(int matrix[n][n], int i, int j, FILE* out_file);
+void pathwayexist(int matrix[n][n], int i, int j);
 
 int min(int x, int y);
 
