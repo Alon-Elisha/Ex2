@@ -117,10 +117,10 @@ void pathwayexist(int matrix[n][n], int i, int j)
   int s = find_if_path(matrix, i, j);
   if(s > -1)
   {
-    printf("True\n");
+    printf("True");
   }
   else{
-    printf("False\n");
+    printf("False");
   }
 
 }
@@ -179,10 +179,10 @@ void shortestpath(int matrix1[n][n], int x, int y)
 
   if(mat[x][y] >= max*3 || mat[x][y] == 0)
   {
-    printf("-1\n");
+    printf("-1");
   }
   else{
-    printf("%d\n", mat[x][y]);
+    printf("%d", mat[x][y]);
   }
   
 }
