@@ -182,7 +182,7 @@ void shortestpath(int matrix1[n][n], int x, int y)
     printf("%d\n", -1);
   }
   else{
-    printf("%d\n", mat[x][y])
+    printf("%d\n", mat[x][y]);
   }
   
 }
