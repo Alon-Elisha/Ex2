@@ -23,7 +23,6 @@ main (void)
   }
   */
    //FILE *out_file = fopen("test_files.txt", "w");
-   FILE *out_file = fopen("test_files.txt", "w");
 
    int matrix[n][n];
    bool flag = true;
@@ -41,7 +40,8 @@ main (void)
      if(is_matrix != true && (command_letter == 'A' || command_letter != 'D'))
      {
         printf("You need to input a matrix before using this command:\n");
-        printf("You can input a matrix with the 'A' command\n");
+        printf("Input matrix\n");
+        getmatrix(matrix);
      }
      else{
        if(command_letter == 'A'){
@@ -50,12 +50,12 @@ main (void)
        if(command_letter == 'B'){
           printf("Enter i and j\n");
           scanf("%d" "%d", &i, &j);
-          pathwayexist(matrix,i,j, out_file);
+          pathwayexist(matrix,i,j);
        }
        if(command_letter == 'C'){
           printf("Enter i and j\n");
           scanf("%d" "%d", &i, &j);
-          shortestpath(matrix, i, j, out_file);
+          shortestpath(matrix, i, j);
        }
        if(command_letter == 'D'){
           exit(0);
