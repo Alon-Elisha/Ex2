@@ -20,6 +20,8 @@ void getmatrix(int matrix1[n][n])
 
 
 
+
+
 int min(int x, int y)
 {
   if(x < y)
@@ -35,8 +37,9 @@ int min(int x, int y)
 
 
 
-
-
+// IF NEED BE ADD IF i = j return -1
+// meanwhile check the code
+// if not work define INFINITY as 99999, then work exactly like the code.
 int find_if_path(int matrix1[n][n], int x, int y)
 {
   int mat[n][n];
@@ -98,9 +101,20 @@ int find_if_path(int matrix1[n][n], int x, int y)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 void pathwayexist(int matrix[n][n], int i, int j)
 {
-  int s = find_if_path(matrix,i,j);
+  int s = find_if_path(matrix, i, j);
   if(s > -1)
   {
     printf("True\n");
@@ -165,10 +179,10 @@ void shortestpath(int matrix1[n][n], int x, int y)
 
   if(mat[x][y] >= max*3 || mat[x][y] == 0)
   {
-    printf("-1\n");
+    printf("%d\n", -1);
   }
   else{
-    printf("%d\n", mat[x][y]);
+    printf("%d\n", mat[x][y])
   }
   
 }

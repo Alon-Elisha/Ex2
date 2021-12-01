@@ -8,7 +8,21 @@
 int
 main (void)
 {
-  
+  /*
+  //printf ("Hello, world!\n");
+  int i,j, mat[n][n];
+  getmatrix(mat);
+  printf("Two Dimensional array elements:\n");
+  for(i=0; i<n; i++) {
+    for(j=0;j<n;j++) {
+        printf("%d ", mat[i][j]);
+        if(j==3){
+          printf("\n");
+        }
+      }
+  }
+  */
+   //FILE *out_file = fopen("test_files.txt", "w");
 
    int matrix[n][n];
    bool flag = true;
