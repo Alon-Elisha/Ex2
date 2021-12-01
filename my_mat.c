@@ -112,15 +112,15 @@ int find_if_path(int matrix1[n][n], int x, int y)
 
 
 
-void pathwayexist(int matrix[n][n], int i, int j)
+void pathwayexist(int matrix[n][n], int i, int j, FILE* out_file)
 {
   int s = find_if_path(matrix, i, j);
   if(s > -1)
   {
-    printf("True\n");
+    fprintf(out_file, "True\n");
   }
   else{
-    printf("False\n");
+    fprintf(out_file, "False\n");
   }
 
 }
@@ -130,7 +130,7 @@ void pathwayexist(int matrix[n][n], int i, int j)
 // IF NEED BE ADD IF i = j return -1
 // meanwhile check the code
 // if not work define INFINITY as 99999, then work exactly like the code.
-void shortestpath(int matrix1[n][n], int x, int y)
+void shortestpath(int matrix1[n][n], int x, int y, FILE* out_file)
 {
   int mat[n][n];
   int i,j,k, max;
@@ -179,10 +179,10 @@ void shortestpath(int matrix1[n][n], int x, int y)
 
   if(mat[x][y] >= max*3 || mat[x][y] == 0)
   {
-    printf("%d\n", -1);
+    fprintf(out_file, "%d\n", -1);
   }
   else{
-    printf("%d\n", mat[x][y]);
+    fprintf(out_file, "%d\n", mat[x][y]);
   }
   
 }
