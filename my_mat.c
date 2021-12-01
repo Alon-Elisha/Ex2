@@ -23,10 +23,10 @@ void pathwayexist(int matrix[n][n], int i, int j)
   int s = shortestpath(matrix, i, j);
   if(s > -1)
   {
-    printf("True");
+    printf("True\n");
   }
   else{
-    printf("False");
+    printf("False\n");
   }
 
 }
