@@ -54,7 +54,7 @@ main (void)
           printf("Enter i and j\n");
           scanf("%d" "%d", &i, &j);
           int val = shortestpath(matrix, i, j);
-          printf("%d\n", val);
+          printf("%d", val);
        }
        if(command_letter == 'D'){
           exit(0);
