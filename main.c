@@ -28,7 +28,7 @@ main (void)
    bool is_matrix = false;
    char command_letter;
    int i,j;
-   while(flag = true)
+   while(flag == true)
    {
      printf("Give a command:\n");
      scanf(" %c", &command_letter);

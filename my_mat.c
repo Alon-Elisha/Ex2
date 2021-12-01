@@ -44,10 +44,11 @@ int min(int x, int y)
 
 }
 
-
+// IF NEED BE ADD IF i = j return -1
+// meanwhile check the code
+// if not work define INFINITY as 99999, then work exactly like the code.
 int shortestpath(int matrix1[n][n], int x, int y)
 {
-
   int mat[n][n];
   int i,j,k, max;
   max = matrix1[0][0];
@@ -68,7 +69,8 @@ int shortestpath(int matrix1[n][n], int x, int y)
   {
     for(j = 0; j < n; j++)
     {
-      if(matrix1[i][j] == 0 )
+      // the change is matrix adding condition
+      if(matrix1[i][j] == 0 && i != j)
       {
         // giving a value equivelent to infinity in this scenario.
         // there is no number greater than max, and we arent dealing with extremely large numbers, so max * 3 can be used as 'infinity'.
@@ -92,7 +94,7 @@ int shortestpath(int matrix1[n][n], int x, int y)
     }
   }
 
-  if(mat[x][y] >= max*3)
+  if(mat[x][y] >= max*3 || mat[x][y] == 0)
   {
     return -1;
   }
