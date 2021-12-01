@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 #include "my_mat.h"
 
 
@@ -18,15 +19,15 @@ void getmatrix(int matrix1[n][n])
 
 
 
-void pathwayexist(int matrix[n][n], int i, int j)
+void pathwayexist(int matrix[n][n], int i, int j, FILE out_file)
 {
   int s = shortestpath(matrix, i, j);
   if(s > -1)
   {
-    printf("True\n");
+    fprintf(out_file, "True\n");
   }
   else{
-    printf("False\n");
+    fprintf(out_file, "False\n");
   }
 
 }
