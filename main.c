@@ -26,10 +26,6 @@ main (void)
 
 
 
-
-
-
-
    int matrix[n][n];
    bool flag = true;
    bool is_matrix = false;
